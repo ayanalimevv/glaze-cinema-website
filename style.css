@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+@import url("./footer.css");
+@import url("./navbar.css");
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +9,7 @@
 
 html, body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -15,27 +18,6 @@ a {
 
 section {
   padding: 8rem 2rem;
-}
-
-nav {
-  position: fixed !important;
-  top: 0;
-  padding: 1.5rem !important;
-  left: 0;
-  z-index: 1000;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5) !important;
-}
-nav .nav-link, nav .navbar-brand {
-  color: #fff !important;
-  font-weight: 400;
-  margin: 0 1rem;
-}
-nav .nav-item.active .nav-link {
-  border-bottom: 3px solid #FC1898;
-}
-nav .login {
-  border-right: 2px solid #fff;
 }
 
 #hero {
@@ -227,6 +209,7 @@ nav .login {
   margin-top: 2.5rem;
 }
 #gallery .main-col .video-container video {
+  border-radius: 1rem;
   width: 100%;
   max-width: 600px;
   position: relative;
@@ -254,6 +237,7 @@ nav .login {
 #achievements .ach-card {
   background-color: #fff;
   padding: 2rem;
+  border-radius: 6px;
   margin: 1rem;
   transition: 0.5s ease;
 }
@@ -307,6 +291,7 @@ nav .login {
 }
 
 #testimonials {
+  position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("https://images.unsplash.com/photo-1548705085-101177834f47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80") center no-repeat;
   background-size: cover;
 }
@@ -334,6 +319,30 @@ nav .login {
   margin-right: 1rem;
   border-radius: 50%;
   background: url("https://demo.cocobasic.com/seppo-html/images/quote_image_04.jpg") center no-repeat;
+}
+#testimonials .testi-row {
+  width: 400%;
+  transition: 0.5s ease-out;
+}
+#testimonials .carousel-shift {
+  display: flex;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#testimonials .carousel-shift > div {
+  width: 8px;
+  height: 8px;
+  display: flex;
+  border-radius: 50%;
+  background-color: #FC1898;
+  margin-right: 4px;
+  transition: 0.5s ease-out;
+}
+#testimonials .carousel-shift > div.active {
+  border-radius: 4px;
+  width: 14px;
 }
 
 #program {
@@ -416,95 +425,6 @@ nav .login {
   padding: 1rem;
 }
 
-footer {
-  background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url("https://images.unsplash.com/photo-1548705085-101177834f47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80") center no-repeat;
-  background-size: cover;
-  padding: 2rem;
-  color: #fff;
-  position: relative;
-}
-footer .container {
-  margin-top: 10rem;
-}
-footer .footer-top {
-  position: absolute;
-  background-color: #fff;
-  box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.5);
-  color: #000;
-  padding: 3rem;
-  border-radius: 1rem;
-  width: 85%;
-  top: 0;
-  transform: translateY(-50%);
-  display: flex;
-  align-items: center;
-}
-footer .footer-top .footer-left {
-  margin-right: 3rem;
-}
-footer .footer-top .footer-left h5 {
-  color: rgba(0, 0, 0, 0.7);
-}
-footer .footer-top .arrow {
-  display: flex;
-  align-items: center;
-}
-footer .footer-top .arrow > div {
-  width: 10px;
-  height: 10px;
-  margin-left: 0.5rem;
-  background-color: #FC1898;
-  border-radius: 50%;
-  padding: 0.4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-footer .footer-top .arrow > div i {
-  font-size: 0.4rem;
-}
-footer .footer-top .arrow > div:hover {
-  text-decoration: none;
-  color: #000;
-}
-footer .footer-div h1 {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: white;
-  margin-bottom: 4rem;
-}
-footer .social-icons i {
-  margin-right: 0.5rem;
-}
-footer .download-icons {
-  display: flex;
-  flex-direction: column;
-}
-footer .download-icons a:first-child {
-  margin-bottom: 1rem;
-}
-footer .contact-details > div {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-footer .contact-details > div a {
-  color: #fff;
-}
-footer .contact-details > div i {
-  margin-right: 1rem;
-}
-footer .contact-details > div p {
-  margin: 0 !important;
-}
-footer .copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-}
-
 .yellow-text {
   color: yellow;
 }
@@ -549,6 +469,10 @@ footer h1.pink-underline::after {
   }
 }
 @media screen and (max-width: 768px) {
+  .testi-row {
+    width: 800% !important;
+  }
+
   #location .img {
     margin: 2rem 0;
   }

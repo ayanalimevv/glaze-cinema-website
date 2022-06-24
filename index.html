@@ -8,6 +8,8 @@
     <title>Glaze Cinemas</title>
     <!-- CSS Stylesheet link -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
 
     <!-- Bootstrap stylesheet -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
@@ -17,6 +19,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Flickity -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
 
 </head>
 
@@ -36,7 +42,7 @@
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link active" href="about.html">About Us</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -342,8 +348,177 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-6">
+            <!-- <div class="carousel" data-flickity='{ "groupCells": 2 }'>
+                <div class="carousel-cell">
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div> -->
+
+
+            <div class="row testi-row">
+                <div class="col">
                     <div class="testimonial-col">
                         <div class="text">
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
@@ -359,7 +534,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col">
                     <div class="testimonial-col">
                         <div class="text">
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
@@ -374,8 +549,107 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col">
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
+            <div class="carousel-shift">
+            </div>
         </div>
     </section>
 
@@ -525,10 +799,40 @@
     <!-- End of Footer -->
 
     <script>
+        let width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+
         let year = new Date().getFullYear();
         let yearSpan = document.querySelector("#year");
+        let testiRow = document.querySelector(".testi-row");
+        let testiRowCards = document.querySelectorAll(".testi-row>div");
+        let carouselShift=document.querySelector(".carousel-shift");
+
+        let requiredDots= width<768 ? testiRowCards.length : Math.ceil(testiRowCards.length/2);
+        for (let index = 0; index < requiredDots; index++) {
+            let e=document.createElement('div');
+            e.id=index;
+            carouselShift.appendChild(e);
+        }
+
+        let carouselDots=document.querySelectorAll(".carousel-shift div");
+
+        for (let index = 0; index < carouselDots.length; index++) {
+            const e = carouselDots[index];
+            e.addEventListener('click',(e)=>{
+                for (let index = 0; index < carouselDots.length; index++){
+                    let el=carouselDots[index];
+                    el.classList.contains('active') && el.classList.remove('active');
+                }
+
+                let translateValue= (e.target.id);
+                e.target.classList.add('active');
+                testiRow.style.transform= width<768? `translateX(${-(translateValue*100)/8}%)`:`translateX(${-(translateValue*100)/4}%)`
+            })
+        }
         yearSpan.textContent = year;
     </script>
+    <!-- Flickity Script -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
     <!-- Bootstrap Script CDN -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"

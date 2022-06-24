@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+$sec-color:#FC1898;
+@mixin flexbox($dir:row){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $dir;
+}
+footer{
+    background: linear-gradient(rgba(0,0,0,0.95),rgba(0,0,0,0.95)),url('https://images.unsplash.com/photo-1548705085-101177834f47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80') center no-repeat;
+    background-size: cover;
+    padding: 2rem;
+    color: #fff;
+    position: relative;
+    .container{
+        margin-top: 10rem;
+    }
+    .footer-top{
+        position: absolute;
+        // clip-path: polygon(0 0, 100% 33%, 100% 65%, 0% 100%);
+        background-color: #fff;
+        box-shadow: 0 -4px 4px 0 rgba($color: #000000, $alpha: 0.5);
+        color: #000;
+
+        // height: 10rem;
+        padding: 3rem;
+        border-radius: 1rem;
+        width: 85%;
+        top: 0;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        .footer-left{
+            margin-right: 3rem;
+            h5{
+                color: rgba($color: #000000, $alpha: 0.7);
+            }
+        }
+        .arrow{
+            display: flex;
+            // flex-direction: column;
+            align-items: center;
+            &>div{
+                width: 10px;
+            height: 10px;
+            margin-left: .5rem;
+            background-color: $sec-color;
+            border-radius: 50%;
+            padding: .4rem;
+            i{
+                font-size: .4rem
+            }
+            @include flexbox();
+            &:hover{
+                text-decoration: none;
+                color: #000;
+            }
+            }
+        }
+        // flex-direction: ;
+    }
+    .footer-div{
+        h1{
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 4rem;
+        }
+    }
+    .social-icons{
+        i{
+
+            margin-right: .5rem;
+        }
+    }
+    .download-icons{
+        display: flex;
+        flex-direction: column;
+        a:first-child{
+            margin-bottom: 1rem;
+        }
+    }
+    .contact-details{
+        &>div{
+            display: flex;
+            // flex-direction: ;
+            align-items: center;
+            margin-bottom: 1rem;
+            a{
+                color: #fff;
+            }
+            i{
+                margin-right: 1rem;
+            }
+            p{
+                margin: 0 !important;
+            }
+        }
+    }
+    .copyright{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    }
+}
+

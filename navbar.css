@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+nav {
+  position: fixed !important;
+  top: 0;
+  padding: 1.5rem !important;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+nav .nav-link, nav .navbar-brand {
+  color: #fff !important;
+  font-weight: 400;
+  margin: 0 1rem;
+}
+nav .nav-item.active .nav-link {
+  border-bottom: 3px solid #FC1898;
+}
+nav .login {
+  border-right: 2px solid #fff;
+}/*# sourceMappingURL=navbar.css.map */
